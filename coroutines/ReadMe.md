@@ -12,7 +12,7 @@ thread! There are also different groups of thread pools, or dispatchers!
 
 ## How to run
 
-`./gradlew clean test`
+`./gradlew clean :coroutines:test`
 
 ## Test Classes
 

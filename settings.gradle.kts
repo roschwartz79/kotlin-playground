@@ -9,4 +9,4 @@
 
 rootProject.name = "kotlin-playground"
 
-include("coroutines", "extension-functions")
+include("coroutines", "reflection", "extension-functions")
