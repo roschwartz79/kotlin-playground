@@ -64,21 +64,20 @@ class BasicKotlinReflection {
 
         // How can we get the params and generate random ones
         primaryConstructor?.parameters?.forEach { param ->
-            println("Index is ${param.index} and the type is ${param.type}")
             when (param.type) {
                 // create type turns a KClass into a type so we can compare classes to param types
                 Int::class.createType() -> {
-                    println("I'm an Int!")
+                    // println("I'm an Int!")
                     argsMap[param] = intGenerator()
                 }
 
                 String::class.createType() -> {
-                    println("I'm a String!")
+                    // println("I'm a String!")
                     argsMap[param] = stringGenerator()
                 }
 
                 else -> {
-                    println("I'm a Bool!")
+                    // println("I'm a Bool!")
                     argsMap[param] = booleanGenerator()
                 }
             }
